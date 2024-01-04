@@ -1,0 +1,260 @@
+/*public style*/
+*{
+ margin:0px;
+ padding:0px;
+}
+body{
+ /*字号14px;字体:微软雅黑*/
+ font-size:14px;
+ font-family:微软雅黑;
+}
+li{
+ list-style:none;/*去除圆点*/
+}
+a{
+ display:block;/*块状显示*/
+ text-decoration:none;/*去除下划线*/
+}
+.content{
+ width:980px;/*宽980px*/
+ margin:0 auto;/*居中*/
+}
+/*header style*/
+.top{
+ height:50px;/*高50px*/
+ padding-top:30px;/*内上边距30px*/
+}
+.left{
+ float:left;/*左浮动*/
+}
+.right{
+ float:right;/*右浮动*/
+}
+.nav{
+ width:100%;/*宽100%*/
+ height:35px;/*高35px*/
+ background:#0373b9;/*背景#0373b9*/
+ line-height:35px;/*竖直居中*/
+}
+.nav ul li{
+float:left;/*左浮动*/
+}
+.nav ul li a{
+ color:#fff;/*字颜色#fff*/
+ /*内边距上下0px左右40px*/
+ padding:0px 40px;
+ font-size:16px;/*字号16px*/
+}
+/*鼠标经过菜单背景#25abff*/
+.nav ul li a:hover{
+ background:#25abff;
+}
+.banner{
+ width:100%;/*宽100%*/
+ height:580px;/*高580px*/
+ position:relative;/*定位参照*/
+}
+.banner img{
+ width:100%;/*宽100%*/
+ height:100%;/*高100%*/
+ position:absolute;/*绝对定位*/
+}
+.banner ul{
+ position:absolute;/*绝对定位*/
+ left:35%;/*左35%*/
+ bottom:20px;/*底20px*/
+}
+.banner ul li{
+ width:120px;/*宽120px*/
+ height:12px;/*高12px*/
+ background:#0373b9;/*背景#0373b9*/
+ float:left;/*左浮动*/
+ margin:6px;/*外边距6px*/
+ cursor:pointer;/*鼠标手形*/
+}
+/*激活的按钮背景#ffcc00*/
+.banner ul li.hot{
+ background:#ffcc00;
+}
+/*section style*/
+.content h2{
+ font-size:24px;/*字号24px*/
+ color:#666;/*字颜色#666*/
+ /*下边线：7px实线#0373b9*/
+ border-bottom:7px solid #0373b9;
+ margin:40px 0;/*上下40px左右0*/
+ font-weight:normal;/*不加粗*/
+ /*内边距：上下40px左右0*/
+ padding:40px 0;
+}
+dl{
+ width:980px;/*宽980px*/
+ height:180px;/*高180px*/
+}
+dl dt{
+float:left;/*左浮动*/
+/*外边距：上下20px 左右0*/
+margin:20px 0;
+}
+dl dt img{
+ width:200px;/*宽200px*/
+ height:200px;/*高200px*/
+}
+dl dd{
+ float:left;/*左浮动*/
+ width:600px;/*宽600px*/
+ /*内边距：上20，右0，下0，左30*/
+ padding:20px 0 0 30px;
+}
+ul.list li{
+ float:left;/*左浮动*/
+ margin:9px;/*外边距9px*/
+ overflow:hidden;/*超出范围隐藏*/ 
+ width:226px;/*宽226px*/
+ height:129px;/*高129px*/
+ position:relative;/*定位参照*/
+}
+ul.list img{
+/*宽和高和父层一样大*/
+width:100%;
+height:100%;
+}
+.info{
+/*宽和高和父层一样大*/
+width:100%;
+height:100%;
+ background:rgba(0,0,0,0.8);/*背景黑色80%透明*/
+ position:absolute;/*绝对定位*/
+ left:0;/*左0*/
+ bottom:-100%;/*底-100%*/
+}
+/*制作鼠标经过ul.list li时的info动画
+ 1.底部为0
+ 2.动画时间2秒
+*/
+ ul.list li:hover .info{
+  bottom:0px;
+  transition:2s;
+ }
+.info a{
+ width:180px;/*宽180px*/
+ height:36px;/*高36px*/
+ background:#0373b9;/*背景#0373b9*/
+ color:#fff;/*字颜色#fff*/
+ border-radius:5px;/*圆角5px*/
+ text-align:center;/*水平居中*/
+ line-height:36px;/*竖直居中*/
+ /*外边中距上下50px,左右居中*/
+ margin:50px auto;
+}
+.box{
+width:980px;/*宽980px*/
+height:420px;/*高420px*/
+/*上外边距20px*/
+margin-top:20px;
+}
+.sub1{
+ width:638px;/*宽638px*/
+ height:380px;/*高380px*/
+ float:left;/*左浮动*/
+ position:relative;/*定位参照*/
+}
+.sub1 img{
+ position:absolute;/*绝对定位*/
+ width:445px;/*宽445px*/
+ height:380px;/*高380px*/
+}
+.sub1 ul{
+position:absolute;/*绝对定位*/
+top:0;/*顶0*/
+right:0;/*右0*/
+}
+.sub1 ul li{
+ width:192px;/*宽192px*/
+ height:125px;/*高125px*/
+ background:#666;/*背景#666*/
+ color:#fff;/*字颜色#fff*/
+ /*下边线1px 实线#fff*/
+ border-bottom:1px solid #fff;
+ font-size:30px;/*字号30px*/
+ text-align:center;/*水平居中*/
+ line-height:125px;/*竖直居中*/
+ cursor:pointer;/*鼠标手形*/
+}
+.sub1 ul li.on{
+ background:#0373b9;/*背景色#0373b9*/
+}
+
+.sub2{
+ width:326px;/*宽326px*/
+ height:380px; /*高380px*/
+ float:right;/*右浮动*/
+}
+td.left{
+ width:80px;/*宽80px*/
+ font-size:18px;/*字号18px*/
+ text-align:right;/*右对齐*/
+}
+/*输入文本框的样式
+1.宽204px
+2.高28px
+3.边框：1px 实线#d2d2d2
+4.外框：无
+5.首行缩进20px
+*/
+.sub2 .tt{
+ width:204px;
+ height:28px;
+ border:1px solid #d2d2d2;
+ outline:none;
+ text-indent:20px;
+}
+table td{
+ height:50px;/*高50px*/
+ line-height:50px;/*竖直居中*/
+}
+/*列表菜单的样式
+ 1.宽204px
+ 2.高28px
+ 3.边框：1px 实线#d2d2d2
+ 4.外框：无
+*/
+select{
+ width:204px;
+ height:28px;
+ border:1px solid #d2d2d2;
+ outline:none;
+}
+ /*提交按钮的样式：
+  1.宽190px
+  2.高55px
+  3.背景#0373b9
+  4.字号18px
+  5.字颜色
+  6.圆角40px
+  7.鼠标手形
+  8.外边距:上下10px左右居中
+  9.块状显示
+  10.投影x0,y0,大小5px颜色#000
+ */
+.sub2 .but{
+ width:190px;
+ height:55px;
+ background:#0373b9;
+ font-size:18px;
+ color:#fff;
+ border-radius:40px;
+ cursor:pointer;
+ margin:10px auto;
+ display:block;
+ box-shadow:0 0 5px #000;
+}
+/*footer style*/
+footer{
+ height:60px;/*高60px*/
+ line-height:60px;/*竖直居中*/
+ background:#0373b9;/*背景#0373b9*/
+ text-align:center;/*水平居中*/
+ color:#fff;/*字颜色#fff*/
+ margin-top:30px;/*外上边距30px*/
+}
